@@ -1,0 +1,195 @@
+'use client'
+import * as React from 'react';
+import  Style from './page.module.css';
+import { Button, Card, CardBody, CardFooter, CardHeader, Heading, ListItem, Stack, Text, UnorderedList } from "@chakra-ui/react";
+import { useState } from 'react';
+import Image from 'next/image'
+import ImgCardOne from '../../public/img/home/cards/1.png'
+import ImgCardTwo from '../../public/img/home/cards/2.png'
+import ImgCardThree from '../../public/img/home/cards/3.png'
+
+import starIcon from '../../public/img/home/sectionChooseIcon/star.svg'
+import likeIcon from '../../public/img/home/sectionChooseIcon/like.svg'
+
+
+
+export default function Page() {
+  const [buttonSelected, setButtonSelected] = useState(1);
+  const colorTransparent = {background : "transparent"};
+  const colorRed = {background : "linear-gradient(#ff3030,#ca1111)"};
+  const [colorButtonSelected, setColorButtonSelected] = useState([colorRed,colorTransparent,colorTransparent])
+
+
+  const cambiarColor = (selected:number) =>{
+    setButtonSelected(selected)
+    if(selected == 1){setColorButtonSelected([colorRed, colorTransparent,colorTransparent])}
+    if(selected == 2){setColorButtonSelected([colorTransparent,colorRed,colorTransparent])}
+    if(selected == 3){setColorButtonSelected([colorTransparent,colorTransparent,colorRed])}
+
+  }
+
+  const cardContent = [
+    {
+      id:1,
+
+      title : "Contenidos",
+
+      text : "Desarrollamos contenidos sobre la base de la tecnología, con  eficientes métodos y experiencias de gestión para el cliente, con énfasis en novedosas  experiencias para los consumidores finales. Utilizando las distintas plataformas audiovisuales digitales de manera creativa tecnológica, intuitivas e  innovadoras.",
+      
+      icon :"",
+
+      servicios : [
+        "Creación de contenidos para redes sociales",
+        "Redacción de artículos con optimización SEO, ideal para tus sitios web o blogs.",
+        "Creatividad para planificar y diseñar los contenidos para tus plataformas digitales, tanto aplicaciones móviles como sitios web.",
+
+      ],
+      img:ImgCardOne,
+    },
+    {
+      id:2,
+
+      title : "MARKETING DIGITAL – ENDOMARKETING",
+
+      text : "Creativas soluciones de endomarketing para las empresas y sus trabajadores apoyando la gestión de RRHH y comunicación interna y posicionando el orgullo de pertenecer como valor agregado a nuestra gestión.",
+      
+      icon :"",
+
+      servicios : [
+        "Construcción de identidad de marca",
+        "Realización de aplicaciones moviles o sitios web para el desenvolvimiento de los trabajadores dentro de la empresa",
+        "Asesoría digital para cualquier tipo de negocio y sin importar el statu en que se encuentre, bien sea para su inicialización o potenciar",
+      ],
+      img:ImgCardTwo,
+    },
+    {
+      id:3,
+
+      title : "Smart Communication Platform (SCP)",
+
+      text : "SCP es una plataforma tecnológica audiovisual multicontenidos  que diseña, administra y distribuye de manera intuitiva y remota contenidos.   /n  Creada  para informar, educar, entretener, integrar y desarrollar estrategias de comunicación corporativas, educacionales y de marketing comercial, a través de productos y servicios audiovisuales.",
+      
+      icon :"",
+
+      servicios: [
+        "Creación , desarrollo, producción, y  realización de contenidos, para comunicación corporativa interna, establecimientos  educacionales, corporaciones deportivas y culturales.",
+        "Estrategias, campañas y planes de marketing para empresas, retail, supermercados, shopping center, malls, strep center.",
+        "Desde su operación, es decir, su funcionamiento.",
+        "Montura de cartelería digital (Digital Signage)",
+        "Construcción de aplicación móvil dedicada",
+        "Montaje de cámaras de video inteligentes integradas."
+      ],
+      img:ImgCardThree
+    },
+  ]
+
+
+  const generateService = () =>{
+    cardContent[buttonSelected-1].servicios.map(service => <li>{service}</li> )
+  }
+
+  return (
+    <section>
+      <video autoPlay loop className={Style.banner}>
+        <source src="/video/banner/TODOESPOSIBLE.mp4" />
+      </video>
+      <h2 className={Style.title}>
+        Trabajando en conjunto podemos potenciar por medio del contenido, plataformas y herramientas de marketing digital para tu marca, empresa, negocio, comunicación corporativa, educacional y mucho más.
+      </h2>
+      <section className={Style.sectionCards}>
+        <div className={Style.containerButton}>
+          <Button  className={Style.button} style={colorButtonSelected[0]} onClick={()=>{cambiarColor(1)}}>Button</Button>
+          <Button  className={Style.button} style={colorButtonSelected[1]} onClick={()=>{cambiarColor(2)}}>Button</Button>          
+          <Button  className={Style.button} style={colorButtonSelected[2]} onClick={()=>{cambiarColor(3)}}>Button</Button>
+        </div>
+
+        <section className={Style.containerCard}>
+          <Card align='center' className= {Style.card }>
+            <CardHeader className={Style.cardHeader}>
+              <Heading size='lg' textTransform='uppercase'> 
+              {cardContent[buttonSelected-1].title} 
+              </Heading>
+              <Stack>
+                <CardBody>
+                  <Button variant='solid' colorScheme='red'>
+                    Cotiza con nosotros
+                  </Button>
+                </CardBody>
+              </Stack>
+            </CardHeader>
+            <CardBody>
+              <Text>
+              {cardContent[buttonSelected-1].text} 
+              </Text>
+              <div className={Style.cardSectionList}>
+                <Heading size='md' textTransform='uppercase'>
+                  Servicios
+                </Heading>
+                <UnorderedList className={Style.cardSectionListContent}>
+                    {
+                      cardContent[buttonSelected-1].servicios.map((service,id) => <ListItem key={id}>{service}</ListItem> )
+                    }
+                </UnorderedList>
+              </div>
+            </CardBody>
+            <CardFooter>
+            <Image
+              src={cardContent[buttonSelected-1].img}
+              alt="Picture of the author"
+              width={ 200 }
+              height={ 200 }
+            />
+            </CardFooter>
+          </Card>
+        </section>
+      </section>
+
+      <section className={Style.sectionWhyChoose}>
+        <header>
+          <h3>“ ¡ SOMOS LA MEJOR OPCIÓN PARA IMPULSAR TU NEGOCIO ! ”</h3>
+        </header>
+        <main>
+          <section >
+            <h4>“¿ Por qué elegir a Whytenot ?”</h4>
+            <Button variant='solid' colorScheme='red'>
+              Cotiza con nosotros
+            </Button>
+          </section>
+          <Card align='center'  className={Style.sectionWhyChooseCard}>
+            <Image src={starIcon}  alt="" className={Style.sectionWhyChooseIcon}/>
+            <CardHeader>
+              <Heading size='md' className={Style.sectionWhyChooseCardTitle}>EXPERIENCIA</Heading>
+            </CardHeader>
+            <CardBody>
+              <Text className={Style.sectionWhyChooseCardContent}>
+                Contamos con todos los conocimientos y la experiencia necesaria para poder materializar e impulsar tu negocio.
+              </Text>
+            </CardBody>
+          </Card>
+          <Card align='center' className={Style.sectionWhyChooseCard}>
+            <Image src={likeIcon}  alt="" className={Style.sectionWhyChooseIcon}/>
+            <CardHeader>
+              <Heading size='md' className={Style.sectionWhyChooseCardTitle}>COMPROMISO</Heading>
+            </CardHeader>
+            <CardBody>
+              <Text className={Style.sectionWhyChooseCardContent}>
+                En Whytenot nos comprometemos contigo y tu proyecto, involucrándonos como si fuera nuestro.
+              </Text>
+            </CardBody>
+          </Card>
+          <Card align='center' className={Style.sectionWhyChooseCard}>
+            <Image src={starIcon}  alt="" className={Style.sectionWhyChooseIcon}/>
+            <CardHeader>
+              <Heading size='md' className={Style.sectionWhyChooseCardTitle}>TE VALORAMOS</Heading>
+            </CardHeader>
+            <CardBody>
+              <Text className={Style.sectionWhyChooseCardContent}>
+                ¡Tu confianza no tiene precio! Nosotros la valoramos al dejar tu proyecto en nuestras manos.
+              </Text>
+            </CardBody>
+          </Card>
+        </main>
+      </section>
+    </section>
+  )
+}

@@ -1,0 +1,26 @@
+// app/providers.tsx
+'use client'
+
+import NavBar from '@/components/nav/navBar'
+import { CacheProvider } from '@chakra-ui/next-js'
+import { ChakraProvider } from '@chakra-ui/react'
+
+
+export default function RootLayout({
+    children,
+  }: {
+    children: React.ReactNode
+  }) {
+    return (
+      <html lang="en">
+        <body>
+            <CacheProvider>
+            <ChakraProvider>
+                <NavBar></NavBar>
+                {children}
+            </ChakraProvider>
+            </CacheProvider>
+        </body>
+      </html>
+    )
+  }

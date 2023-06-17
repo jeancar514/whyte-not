@@ -1,0 +1,81 @@
+.sectionServiceOne:nth-child(1){
+    padding-top: 90px;
+}
+.sectionService{
+    background: linear-gradient(white,rgb(245, 245, 255));
+    display: flex;
+    padding-top:95px;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.sectionService div h2{
+    color: #7c0000;
+    font-size: 2em;
+    font-weight: 500;
+    text-align: center;
+    margin: 0px 10px;
+    z-index: 5;
+}
+
+.sectionService div p{
+    color: #7c0000;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+    margin: 0px 10px;
+    z-index: 5;
+}
+.sectionServiceOne{
+    background: linear-gradient(white,rgb(245, 245, 255));
+    display: flex;
+    padding: 20px 0px;
+    justify-content:space-between;
+    align-items: center;
+}
+.sectionServiceOne div h2{
+    color: #7c0000;
+    font-size: 2em;
+    font-weight: 500;
+    text-align: center;
+    margin: 0px 10px;
+    z-index: 5;
+}
+
+.sectionServiceOne div p{
+    color: #7c0000;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+    margin: 0px 10px;
+    z-index: 5;
+}
+
+.imgService{
+    z-index: 5;
+}
+
+.sectionServiceTwo{
+    background: linear-gradient(#ff3030,#ca1111);
+    padding: 20px 0px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.sectionServiceTwo div h2{
+    color: white;
+    font-size: 2em;
+    font-weight: 500;
+    text-align: center;
+    margin: 0px 10px;
+    z-index: 5;
+}
+
+.sectionServiceTwo div p{
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+    margin: 0px 10px;
+    z-index: 5;
+}

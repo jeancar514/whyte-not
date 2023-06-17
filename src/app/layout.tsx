@@ -16,7 +16,6 @@ export default function RootLayout({
         <body>
             <CacheProvider>
             <ChakraProvider>
-                <NavBar></NavBar>
                 {children}
             </ChakraProvider>
             </CacheProvider>

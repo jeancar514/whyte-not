@@ -1,0 +1,97 @@
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#c4c2c275,#8686868c);
+    padding: 0px 0px ;
+
+}
+
+.footer section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #7c0000;   
+    font-size: 1em;
+    font-weight: 600;
+}
+.footer section p{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #7c0000;
+}
+
+.footer section ul li{
+    list-style: none;
+}
+.footer section img{
+    position: absolute;
+    bottom: 0px;
+}
+.footer section >*{
+    padding: 20px 20px;
+}
+
+.footerListEmail{
+    border-right: 2px solid #7c0000;
+
+}
+
+.footerLinkVentas {
+    display: flex;
+    align-items: center;
+}
+
+.footerlink{
+    font-size: 1.2em;
+}
+
+.footerLinkVentas p{
+    font-size: 1em !important;
+    font-weight: 700;
+    color: #7c0000;
+    margin: 0px 10px;
+}
+
+.footerMethodPay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.footerMethodPay ul {
+    display: flex;
+}
+.footerMethodPay ul li{
+    font-size: 2em;
+    margin-right: 10px;
+}
+.footerMethodPay ul li:last-child{
+    font-size: 1.4em;
+    margin-right: 0px;
+}
+.footerMethodPay p{
+    margin-bottom:10px;
+}
+
+.footerRedes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerRedes p{
+    margin-bottom:10px;
+}
+
+.footerRedes ul{
+    display: flex;
+}
+
+.footerRedes ul li{
+    font-size: 1.5em;
+    margin-right: 5px;
+}
+.footerRedes ul li:last-child{
+    margin-right: 0px;
+}

@@ -1,17 +1,16 @@
 'use client'
 import * as React from 'react';
 import  Style from './page.module.css';
-import { Button, Card, CardBody, CardFooter, CardHeader, Heading, ListItem, Stack, Text, UnorderedList } from "@chakra-ui/react";
+import { Button, Card, CardBody, CardHeader, Heading, ListItem, Stack, Text, UnorderedList } from "@chakra-ui/react";
 import { useState } from 'react';
 import Image from 'next/image'
 import ImgCardOne from '../../public/img/home/cards/1.png'
 import ImgCardTwo from '../../public/img/home/cards/2.png'
 import ImgCardThree from '../../public/img/home/cards/3.png'
-
 import starIcon from '../../public/img/home/sectionChooseIcon/star.svg'
 import likeIcon from '../../public/img/home/sectionChooseIcon/like.svg'
-
-
+import NavBar from '@/components/nav/navBar';
+import Footer from '@/components/footer/footer';
 
 export default function Page() {
   const [buttonSelected, setButtonSelected] = useState(1);
@@ -84,12 +83,17 @@ export default function Page() {
   ]
 
 
-  const generateService = () =>{
-    cardContent[buttonSelected-1].servicios.map(service => <li>{service}</li> )
+
+
+  const navStyle = {
+    fondo : {background:"linear-gradient(#ff3030,#ca1111)"},
+    letter : {color: "white"},
+    logo : {color: "white"},
   }
 
   return (
     <section>
+      <NavBar navBarStyle={navStyle}></NavBar>
       <video autoPlay loop className={Style.banner}>
         <source src="/video/banner/TODOESPOSIBLE.mp4" />
       </video>
@@ -102,13 +106,20 @@ export default function Page() {
           <Button  className={Style.button} style={colorButtonSelected[1]} onClick={()=>{cambiarColor(2)}}>Button</Button>          
           <Button  className={Style.button} style={colorButtonSelected[2]} onClick={()=>{cambiarColor(3)}}>Button</Button>
         </div>
-
         <section className={Style.containerCard}>
           <Card align='center' className= {Style.card }>
             <CardHeader className={Style.cardHeader}>
-              <Heading size='lg' textTransform='uppercase'> 
-              {cardContent[buttonSelected-1].title} 
-              </Heading>
+              <div className={Style.cardHeaderTitle}>
+                <Image
+                    src={cardContent[buttonSelected-1].img}
+                    alt="Picture of the author"
+                    width={ 70 }
+                    height={ 70 }
+                  />
+                <Heading size='lg' textTransform='uppercase'> 
+                  {cardContent[buttonSelected-1].title} 
+                </Heading>
+              </div>
               <Stack>
                 <CardBody>
                   <Button variant='solid' colorScheme='red'>
@@ -132,14 +143,6 @@ export default function Page() {
                 </UnorderedList>
               </div>
             </CardBody>
-            <CardFooter>
-            <Image
-              src={cardContent[buttonSelected-1].img}
-              alt="Picture of the author"
-              width={ 200 }
-              height={ 200 }
-            />
-            </CardFooter>
           </Card>
         </section>
       </section>
@@ -190,6 +193,7 @@ export default function Page() {
           </Card>
         </main>
       </section>
+      <Footer></Footer>
     </section>
   )
 }

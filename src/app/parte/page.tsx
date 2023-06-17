@@ -1,15 +1,60 @@
+import Footer from '@/components/footer/footer';
+import NavBar from '@/components/nav/navBar';
 import * as React from 'react';
+import Style  from "./page.module.css"
+import Image from 'next/image';
+import ImgTv1 from "../../../public/img/parte/tv1.png"
+import ImgTv2 from "../../../public/img/parte/tv2.png"
+import ImgTv3 from "../../../public/img/parte/tv3.png"
+import ImgTv4 from "../../../public/img/parte/tv4.png"
+
 
 function Parte(){
+    const navStyle = {
+        fondo : {background:"linear-gradient(#ff3030,#ca1111)"},
+        letter : {color: "white"},
+        logo : {color: "white"},
+    }
     return(
-        <div>
-            <h2>
-                Parte
-            </h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolor veritatis modi, qui similique tempora unde eum quas totam minima assumenda ratione illum accusamus cupiditate voluptatibus vero veniam, officiis, omnis culpa ullam eligendi? Voluptatibus ipsum architecto ab eveniet corrupti saepe, ipsa impedit reiciendis dolor veniam! Iste cum temporibus maiores consequuntur eligendi totam enim tenetur eius quam assumenda architecto dolores at nesciunt sit fugit laboriosam ad adipisci fuga ut excepturi quia, aliquid, hic eaque. Assumenda commodi doloremque possimus labore expedita ipsa ad modi nesciunt quam veritatis non explicabo, libero reprehenderit numquam obcaecati nisi reiciendis atque, exercitationem consequatur. Perferendis facilis ab adipis 
-            </p>
-        </div>
+        <section>
+            <NavBar navBarStyle={navStyle}></NavBar>
+            <section className={Style.containerCarroussel}>
+                <h3>Proyectos de TV en Chile (Dirección y Producción)</h3>
+                <div className={Style.carroussel}>
+                    <Image
+
+                        className={Style.imgTv}
+                        src={ImgTv1}
+                        alt='image lineas para el fondo'
+                        height={150}
+                        width={150}
+                    />
+                    <Image 
+                        className={Style.imgTv}
+                        src={ImgTv2}
+                        alt='image lineas para el fondo'
+                        height={150}
+                        width={150}
+                    />
+                    <Image 
+                        className={Style.imgTv}
+                        src={ImgTv3}
+                        alt='image lineas para el fondo'
+                        height={150}
+                        width={150}
+                    />
+                    <Image 
+                        className={Style.imgTv}
+                        src={ImgTv4}
+                        alt='image lineas para el fondo'
+                        height={150}
+                        width={150}
+                    /> 
+                </div>
+            </section>
+
+            <Footer></Footer>
+        </section>
     )
 }
 

@@ -1,8 +1,8 @@
 
 .containerNav{
     width: 100%;
-    background: linear-gradient(#ff3030,#ca1111);
     position: fixed;
+    top:0px;
     z-index: 10;
 }
 
@@ -27,12 +27,11 @@
     margin: 0px 15px;
     padding: 3px;
     text-decoration: none;
-    color: white;
     font-size: 1.2em;
     font-weight: 500;
     cursor: pointer;
 }
 
 .link:hover {
-    text-shadow: 3px 3px 4px rgb(133, 12, 12);
+    color: #f7b7b7 !important;
 }

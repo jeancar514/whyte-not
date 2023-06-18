@@ -5,23 +5,37 @@
     flex-direction:column;
     align-items:center;
 }
-.carroussel{
-    aspect-ratio: 10/16;
-    width: 250px; 
-    position:relative; 
-    overflow-x: scroll;
-    display:flex; 
-    scroll-snap-type: x mandatory;
-
+.slider {
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
 }
 
-.imgTv{
-    width:100%;
-    left:0; 
-    object-fit: cover;
-    border-radius: 10px;
-    scroll-snap-align: center ; 
-    float: left;
+.slider .slidetrack {
+    display: flex;
+    animation: scroll 30s linear infinite;
+    -webkit-animation: scroll 30s linear infinite;
+    width: calc(200px * 14);
+}
+
+.slider .slide {
+    width: 200px;
+}
+
+.slider .slide img {
+    width: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 4));
+        transform: translateX(calc(-200px * 4));
+    }
 }
 
 

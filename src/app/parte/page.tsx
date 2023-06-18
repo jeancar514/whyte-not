@@ -20,39 +20,35 @@ function Parte(){
             <NavBar navBarStyle={navStyle}></NavBar>
             <section className={Style.containerCarroussel}>
                 <h3>Proyectos de TV en Chile (Dirección y Producción)</h3>
-                <div className={Style.carroussel}>
-                    <Image
-
-                        className={Style.imgTv}
-                        src={ImgTv1}
-                        alt='image lineas para el fondo'
-                        height={150}
-                        width={150}
-                    />
-                    <Image 
-                        className={Style.imgTv}
-                        src={ImgTv2}
-                        alt='image lineas para el fondo'
-                        height={150}
-                        width={150}
-                    />
-                    <Image 
-                        className={Style.imgTv}
-                        src={ImgTv3}
-                        alt='image lineas para el fondo'
-                        height={150}
-                        width={150}
-                    />
-                    <Image 
-                        className={Style.imgTv}
-                        src={ImgTv4}
-                        alt='image lineas para el fondo'
-                        height={150}
-                        width={150}
-                    /> 
+                <div className={Style.slider}>
+                    <div className={Style.slidetrack}>
+                        <div className={Style.slide}>
+                            <Image src={ImgTv1} alt=""/>
+                        </div>
+                        <div className={Style.slide}>
+                            <Image src={ImgTv2} alt=""/>
+                        </div>
+                        <div className={Style.slide}>
+                            <Image src={ImgTv3} alt=""/>
+                        </div>
+                        <div className={Style.slide}>
+                            <Image src={ImgTv4} alt=""/>
+                        </div>
+                        <div className={Style.slide}>
+                            <Image src={ImgTv1} alt=""/>
+                        </div>
+                        <div className={Style.slide}>
+                            <Image src={ImgTv2} alt=""/>
+                        </div>
+                        <div className={Style.slide}>
+                            <Image src={ImgTv3} alt=""/>
+                        </div>
+                        <div className={Style.slide}>
+                            <Image src={ImgTv4} alt=""/>
+                        </div>
+                    </div>
                 </div>
             </section>
-
             <Footer></Footer>
         </section>
     )

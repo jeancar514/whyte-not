@@ -50,7 +50,7 @@ function Somos(){
                                     Nuestro propósito es
                                 </Heading>
                                 <Text  fontSize='sm' className={Style.cardAcercaText}>
-                                    "Materializar, asesorar y desarrollar las ideas de nuestros clientes, potenciando negocios en el entorno digital, para mejorar la calidad de vida en Chile, aunque no tenemos fronteras".
+                                    Materializar, asesorar y desarrollar las ideas de nuestros clientes, potenciando negocios en el entorno digital, para mejorar la calidad de vida en Chile, aunque no tenemos fronteras.
                                 </Text>
                                 <Text  fontSize='sm' className={Style.cardAcercaText}>
                                 Proveemos diversos servicios como la gestión de redes sociales, diseño de identidad de marca y construcción de aplicaciones móviles o sitios web, así como también otras herramientas necesarias para tus proyectos digitales.

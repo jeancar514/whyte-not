@@ -93,7 +93,7 @@ function Servicios(){
                 services.map((service,id) =>{
                     if(id % 2 != 0){
                         return (
-                        <section className={Style.sectionServiceOne}>
+                        <section key={id} className={Style.sectionServiceOne}>
                             <Image 
                                 className={Style.imgService}
                                 src={service.serviceImg}
@@ -114,7 +114,7 @@ function Servicios(){
                         )
                     }
                     return(
-                        <section className={Style.sectionServiceTwo}>
+                        <section key={id} className={Style.sectionServiceTwo}>
                             <div>
                                 <h2>
                                 {service.serviceTitle}

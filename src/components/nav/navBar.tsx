@@ -9,7 +9,7 @@ import LogoBlackRed from '../../../public/img/logo/blackRed.png'
 
 function NavBar ({navBarStyle}:{navBarStyle:any}){
     const logo = (color:string)=>{
-        if(color == "white"){{ return LogoWhite }}else if (color == "red") { return LogoBlackRed}
+        if(color == "white"){{ return LogoWhite }}else if (color == "blackRed") { return LogoBlackRed}
         return LogoWhite;
     }
     return(

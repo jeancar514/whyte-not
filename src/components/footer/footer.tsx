@@ -27,7 +27,7 @@ function Footer(){
                     <p>Síguenos por qué no?</p>
                     <ul>
                     <li><Link className={Style.footerlink} href={'https://www.instagram.com/whytenot.marketing/'}><BsInstagram/></Link></li>
-                    <li><Link className={Style.footerlink} href={'https://www.facebook.com/profile.php?id=100091506581426&mibextid=ZbWKwL'}><BsFacebook/></Link></li>
+                    <li><Link className={Style.footerlink} href={'https://www.facebook.com/profile.php?viewas=100000686899395&id=100091506581426'}><BsFacebook/></Link></li>
                     </ul>
                 </div>
                 </section>

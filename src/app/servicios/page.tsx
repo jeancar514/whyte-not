@@ -91,7 +91,7 @@ function Servicios(){
                         Contamos con un equipo capacitado en evaluar, diagnosticar y delinear una estrategia de marketing adecuada para posicionar su marca y obtener ventajas sobre sus marcas competidoras.
                         </p>
                         <Button variant='solid' colorScheme='red'>
-                            Cotiza con nosotros
+                            CONTRÁTANOS
                         </Button>
                     </div>
                 </section>
@@ -116,7 +116,7 @@ function Servicios(){
                                 {service.serviceContent}
                                 </p>
                                 <Button variant='solid' colorScheme='red'>
-                                    Cotiza con nosotros
+                                    CONTRÁTANOS
                                 </Button>
                             </div>
                         </section>
@@ -132,7 +132,7 @@ function Servicios(){
                                 {service.serviceContent}
                                 </p>
                                 <Button variant='solid' colorScheme='red' >
-                                    Cotiza con nosotros
+                                    CONTRÁTANOS
                                 </Button>
                             </div>
                             <Image 

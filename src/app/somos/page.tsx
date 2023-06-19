@@ -15,7 +15,7 @@ function Somos(){
     const navStyle = {
         fondo : {background:"linear-gradient(white,rgb(245, 245, 255))"},
         letter : {color: "#7c0000"},
-        logo : {color: "red"},
+        logo : {color: "blackRed"},
       }
     return(
         <section>

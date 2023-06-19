@@ -4,6 +4,7 @@ import * as React from 'react';
 import Image from 'next/image';
 import lineasFondo from "../../../public/img/somos/lineasfondo.png"
 import imgHeader from "../../../public/img/somos/imgHeader.png"
+import imgProposito from "../../../public/img/somos/proposito.png"
 import  Style from './page.module.css';
 import { Box,Card, CardBody, CardHeader, Heading, SimpleGrid, Text} from '@chakra-ui/react';
 import Footer from '@/components/footer/footer';
@@ -41,14 +42,18 @@ function Somos(){
             <main className={Style.mainCardAcerca}>
                 <section className={Style.containerCardAcerca}>
                     <Card align='center' className={Style.cardAcerca} >
-                        <CardHeader>
-                            <Heading size='md' className={Style.cardAcercaTitle}>Acerca de Whyte not</Heading>
+                        <CardHeader className={Style.cardAcercaHeader}>
+                            <Image 
+                                className={Style.imgHeader}
+                                src={imgProposito}
+                                alt='image lineas para el fondo'
+                                height={200}
+                                width={200}
+                            />
+                            <Heading size='md' className={Style.cardAcercaTitle}>Nuestro propósito</Heading>
                         </CardHeader>
                         <CardBody>
                             <Box>
-                                <Heading size='xs' textTransform='uppercase' className={Style.cardAcercaSubtitle} >
-                                    Nuestro propósito es
-                                </Heading>
                                 <Text  fontSize='sm' className={Style.cardAcercaText}>
                                     Materializar, asesorar y desarrollar las ideas de nuestros clientes, potenciando negocios en el entorno digital, para mejorar la calidad de vida en Chile, aunque no tenemos fronteras.
                                 </Text>
@@ -60,9 +65,6 @@ function Somos(){
                     </Card>
                 </section>
                 <section className={Style.containerDifereciadores}>
-                    <Heading size='md' className={Style.DifereciadoresTitle}>
-                        VALOR
-                    </Heading>
                     <Heading size='md' className={Style.DifereciadoresTitle}>
                         Nuestros principales diferenciadores
                     </Heading>
@@ -77,7 +79,7 @@ function Somos(){
                         </Card>
                         <Card className={Style.cardDifereciadores}>
                             <CardHeader>
-                            <Heading size='md'> Asesoramiento 100% personalizada </Heading>
+                            <Heading size='md'> Asesoramiento 100% personalizado </Heading>
                             </CardHeader>
                             <CardBody>
                             <Text className={Style.cardDifereciadoresText}>Contamos con un equipo altamente capacitado listo para atender todas tus dudas y necesidades, para crear estrategias que solucionen e impulsen tu marca.</Text>

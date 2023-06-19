@@ -1,8 +1,10 @@
+"use client"
 import Footer from '@/components/footer/footer';
 import NavBar from '@/components/nav/navBar';
 import Style from './page.module.css'
 import Image from 'next/image';
 import ImgService1 from "../../../public/img/service/service1.png"
+import ImgService2 from "../../../public/img/service/service2.png"
 import ImgService3 from "../../../public/img/service/service3.png"
 import ImgService4 from "../../../public/img/service/service4.png"
 import ImgService5 from "../../../public/img/service/service5.png"
@@ -11,6 +13,7 @@ import ImgService7 from "../../../public/img/service/service7.png"
 import ImgService8 from "../../../public/img/service/service8.png"
 import ImgService9 from "../../../public/img/service/service9.png"
 import * as React from 'react';
+import { Button } from '@chakra-ui/react';
 
 function Servicios(){
     const navStyle = {
@@ -22,7 +25,7 @@ function Servicios(){
         {
             serviceTitle: "Posicionamiento SEO",
             serviceContent: "Nuestro servicio se compone de SEO, utilizamos una metodología de trabajo circular que comienza desde la planificación hasta la revisión y optimización del servicio. Utilizamos diferentes plataformas para recopilar información y comprender el punto de partida de cada proyecto, estableciendo los objetivos para crear el contenido optimizado con SEO.",
-            serviceImg: "",
+            serviceImg: ImgService2,
             serviceImgSize:400, 
         },
         {
@@ -80,13 +83,16 @@ function Servicios(){
                         width={400}
                     />
 
-                    <div>
+                    <div className={Style.sectionServiceContent}>
                         <h2>
                             Investigación de mercado
                         </h2>
                         <p>
                         Contamos con un equipo capacitado en evaluar, diagnosticar y delinear una estrategia de marketing adecuada para posicionar su marca y obtener ventajas sobre sus marcas competidoras.
                         </p>
+                        <Button variant='solid' colorScheme='red'>
+                            Cotiza con nosotros
+                        </Button>
                     </div>
                 </section>
             { 
@@ -102,26 +108,32 @@ function Servicios(){
                                 width={service.serviceImgSize}
                             />
 
-                            <div>
+                            <div className={Style.sectionServiceContent}>
                                 <h2>
                                 {service.serviceTitle}
                                 </h2>
                                 <p>
                                 {service.serviceContent}
                                 </p>
+                                <Button variant='solid' colorScheme='red'>
+                                    Cotiza con nosotros
+                                </Button>
                             </div>
                         </section>
                         )
                     }
                     return(
                         <section key={id} className={Style.sectionServiceTwo}>
-                            <div>
+                            <div className={Style.sectionServiceContent}>
                                 <h2>
                                 {service.serviceTitle}
                                 </h2>
                                 <p>
                                 {service.serviceContent}
                                 </p>
+                                <Button variant='solid' colorScheme='red' >
+                                    Cotiza con nosotros
+                                </Button>
                             </div>
                             <Image 
                                 className={Style.imgService}

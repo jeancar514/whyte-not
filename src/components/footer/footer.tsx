@@ -14,7 +14,7 @@ function Footer(){
             <footer className={Style.footer}>
                 <section>
                 <p>
-                    Nosotros nos encanta atenderte y asesorarte
+                    A nosotros nos encanta atenderte y asesorarte
                 </p>
                 <div className={Style.footerListEmail}>
                     <UnorderedList >
@@ -23,13 +23,15 @@ function Footer(){
                     <ListItem>Producción digital dentro de Chile: <b>kikodiaz@whytenot.com</b></ListItem>
                     </UnorderedList>
                 </div>
-                <div className={Style.footerLinkVentas}>
-                    <BsWhatsapp />
-                    <p>Ventas por Whatsapp</p>
+                <div className={Style.footerRedes}>
+                    <p>Síguenos por qué no?</p>
+                    <ul>
+                    <li><Link className={Style.footerlink} href={'https://www.instagram.com/whytenot.marketing/'}><BsInstagram/></Link></li>
+                    <li><Link className={Style.footerlink} href={'https://www.facebook.com/profile.php?id=100091506581426&mibextid=ZbWKwL'}><BsFacebook/></Link></li>
+                    </ul>
                 </div>
                 </section>
                 <section>
-                <Link className={Style.footerlink} href={'./'}>Home</Link>
                 <Link className={Style.footerlink} href={'/somos'}>Somos</Link>
                 <Link className={Style.footerlink} href={'/servicios'}>Servicios</Link>
                 <Link className={Style.footerlink} href={'/parte'}>Fuimos parte de </Link>
@@ -44,13 +46,6 @@ function Footer(){
                     <li>
                         Zinli
                     </li>
-                    </ul>
-                </div>
-                <div className={Style.footerRedes}>
-                    <p>Síguenos por qué no?</p>
-                    <ul>
-                    <li><Link className={Style.footerlink} href={'https://www.instagram.com/whytenot.marketing/'}><BsInstagram/></Link></li>
-                    <li><Link className={Style.footerlink} href={'https://www.facebook.com/profile.php?id=100091506581426&mibextid=ZbWKwL'}><BsFacebook/></Link></li>
                     </ul>
                 </div>
                 </section>

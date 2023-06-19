@@ -86,9 +86,9 @@ export default function Page() {
 
 
   const navStyle = {
-    fondo : {background:"linear-gradient(#ff3030,#ca1111)"},
-    letter : {color: "white"},
-    logo : {color: "white"},
+    fondo : {background:"linear-gradient(white,rgb(245, 245, 255))"},
+    letter : {color: "#7c0000"},
+    logo : {color: "black"},
   }
 
   return (
@@ -102,9 +102,9 @@ export default function Page() {
       </h2>
       <section className={Style.sectionCards}>
         <div className={Style.containerButton}>
-          <Button  className={Style.button} style={colorButtonSelected[0]} onClick={()=>{cambiarColor(1)}}>Button</Button>
-          <Button  className={Style.button} style={colorButtonSelected[1]} onClick={()=>{cambiarColor(2)}}>Button</Button>          
-          <Button  className={Style.button} style={colorButtonSelected[2]} onClick={()=>{cambiarColor(3)}}>Button</Button>
+          <Button  className={Style.button} style={colorButtonSelected[0]} onClick={()=>{cambiarColor(1)}}>CONTENIDOS</Button>
+          <Button  className={Style.button} style={colorButtonSelected[1]} onClick={()=>{cambiarColor(2)}}>MARKETING DIGITAL</Button>          
+          <Button  className={Style.button} style={colorButtonSelected[2]} onClick={()=>{cambiarColor(3)}}>SCP</Button>
         </div>
         <section className={Style.containerCard}>
           <Card align='center' className= {Style.card }>
@@ -149,11 +149,11 @@ export default function Page() {
 
       <section className={Style.sectionWhyChoose}>
         <header>
-          <h3>“ ¡ SOMOS LA MEJOR OPCIÓN PARA IMPULSAR TU NEGOCIO ! ”</h3>
+          <h3>¡SOMOS LA MEJOR OPCIÓN PARA IMPULSAR TU NEGOCIO!</h3>
         </header>
         <main>
           <section >
-            <h4>“¿ Por qué elegir a Whytenot ?”</h4>
+            <h4>¿Por qué elegir a Whytenot?</h4>
             <Button variant='solid' colorScheme='red'>
               Cotiza con nosotros
             </Button>

@@ -7,7 +7,7 @@
 }
 .banner h2{
     color: white;
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 500;
     text-align: center;
     margin: 0px 10px;
@@ -36,11 +36,12 @@
     color: #ca1111;
     font-size: 1.5em;
 }
-.cardAcercaSubtitle{
-    text-align: center;
-    color: #7c0000;
-    font-size: 1.2em;
-
+.cardAcercaHeader{
+    display: flex; 
+    align-items: center;
+}
+.cardAcercaHeader > *{
+    margin: 0px 10px ;
 }
 .cardAcercaText{
     text-align: center;

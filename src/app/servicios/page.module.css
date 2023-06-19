@@ -4,6 +4,7 @@
 .sectionService{
     background: linear-gradient(white,rgb(245, 245, 255));
     display: flex;
+    padding:20px;
     padding-top:95px;
     justify-content:space-between;
     align-items: center;
@@ -26,12 +27,20 @@
     margin: 0px 10px;
     z-index: 5;
 }
+.sectionServiceContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sectionServiceContent > *{
+    margin: 20px 0px;
+}
 .sectionServiceOne{
     background: linear-gradient(white,rgb(245, 245, 255));
     display: flex;
-    padding: 20px 0px;
     justify-content:space-between;
     align-items: center;
+    padding:20px;
 }
 .sectionServiceOne div h2{
     color: #7c0000;
@@ -53,11 +62,12 @@
 
 .imgService{
     z-index: 5;
+    margin: 10px 0px;
 }
 
 .sectionServiceTwo{
     background: linear-gradient(#ff3030,#ca1111);
-    padding: 20px 0px;
+    padding:20px;
     display: flex;
     justify-content:space-between;
     align-items: center;

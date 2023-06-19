@@ -46,12 +46,6 @@
     font-size: 1.2em;
 }
 
-.footerLinkVentas p{
-    font-size: 1em !important;
-    font-weight: 700;
-    color: #7c0000;
-    margin: 0px 10px;
-}
 
 .footerMethodPay{
     display: flex;

@@ -35,3 +35,13 @@
 .link:hover {
     color: #f7b7b7 !important;
 }
+
+@media (max-width: 900px) {
+    .logo{
+        height: 50px;
+        width: auto;
+    }
+    .link{
+        font-size: 1em;
+    }
+}

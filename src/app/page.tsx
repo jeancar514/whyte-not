@@ -11,6 +11,7 @@ import starIcon from '../../public/img/home/sectionChooseIcon/star.svg'
 import likeIcon from '../../public/img/home/sectionChooseIcon/like.svg'
 import NavBar from '@/components/nav/navBar';
 import Footer from '@/components/footer/footer';
+import ButtomWhat from '@/components/buttomWhat/buttomWhat';
 
 export default function Page() {
   const [buttonSelected, setButtonSelected] = useState(1);
@@ -193,6 +194,7 @@ export default function Page() {
           </Card>
         </main>
       </section>
+      <ButtomWhat></ButtomWhat>
       <Footer></Footer>
     </section>
   )

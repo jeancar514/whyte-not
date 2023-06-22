@@ -1,0 +1,50 @@
+.containerCard{
+    display:flex;
+    justify-content: center;
+    margin: 50px;
+    margin-top: 150px;
+}
+.card{
+    padding: 20px;
+    width: 60%;
+    display:flex;
+    flex-direction:column;
+    align-items:center; 
+    background: linear-gradient(rgb(255, 255, 255),rgb(231, 231, 231)) ; 
+}
+.containerForm{
+    display : flex;
+    justify-content: center;
+    width: 100%;
+}
+.formTitle{
+    text-align: center;
+    color: #7c0000;
+}
+.form{
+    width: 80%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    border-radius:20px;
+}
+.form > * {
+    width: 100%;
+    margin: 20px 0px;
+    display:flex;
+    flex-direction:column;
+}
+.inputGroup{
+    width: 100%;
+    background: white;
+    border-radius:15px; 
+}
+.textArea{
+    background-color: white !important;
+}
+
+@media (max-width: 900px) {
+    .card{
+        width: 90%;
+    }
+}

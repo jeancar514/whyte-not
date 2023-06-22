@@ -10,7 +10,7 @@ import { FaCcVisa } from 'react-icons/fa';
 
 function Footer(){
     return(
-        <section>
+        <section className={Style.container}>
             <footer className={Style.footer}>
                 <section>
                 <p>

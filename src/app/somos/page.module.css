@@ -81,3 +81,60 @@
 .mainCardAcerca{
     margin-bottom: 50px;
 }
+
+
+@media (max-width: 900px) {
+    .banner h2{
+        font-size: 1.6em;
+    }
+    .imgLineasFondo{
+        width: 70%;
+    }
+    .imgHeader{
+        width: 50%;
+    }
+    .cardDifereciadoresText{
+        font-size: 1em;
+    }
+    .cardAcercaText{
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 560px) {
+    .banner h2{
+        font-size: 1.1em;
+    }
+    .imgLineasFondo{
+        width: 70%;
+    }
+    .imgHeader{
+        width: 50%;
+    }
+    .cardDifereciadoresText{
+        font-size: 1em;
+    }
+    .cardAcercaText{
+        font-size: 1em;
+    }
+    .DifereciadoresTitle{
+        font-size: 1.1em;
+    }
+    .containerCardDifereciadores{
+        display: flex;
+        flex-direction: column;
+    }
+    .cardDifereciadores h2 {
+        font-size: 1.1em;
+    }
+    .cardAcercaTitle{
+        font-size: 1.15em;
+    }
+    .imgHeader{
+        width: 50%;
+    }
+    .cardAcercaText{
+        font-size: 1em;
+        text-align: center;
+    }
+}

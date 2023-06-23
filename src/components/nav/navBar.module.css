@@ -18,7 +18,7 @@
     width: auto;
 }
 
-.nav{
+.navBar{
     display: flex;
     list-style: none;
 }
@@ -36,6 +36,17 @@
     color: #f7b7b7 !important;
 }
 
+.menuPhone{
+    display:none;
+}
+.menuPhone button{
+    border: none;
+}
+.menuPhoneIcon{
+    color: black;
+    font-size: 1.5em;
+}
+
 @media (max-width: 900px) {
     .logo{
         height: 50px;
@@ -43,5 +54,23 @@
     }
     .link{
         font-size: 1em;
+    }
+}
+
+@media (max-width: 750px) {
+    .navBar{
+        padding: 10px 10px;
+    }
+    .nav{
+        padding: 10px 10px;
+    }
+}
+
+@media (max-width:560px) {
+    .navBar{
+       display:none; 
+    }
+    .menuPhone{
+        display:inline;
     }
 }

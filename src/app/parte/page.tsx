@@ -15,8 +15,8 @@ import { Button, Card, CardBody, CardFooter, CardHeader, Heading,Link,Text } fro
 function Parte(){
     const navStyle = {
         fondo : {background:"linear-gradient(#ff3030,#ca1111)"},
-        letter : {color: "white"},
-        logo : {color: "white"},
+        letter : {color: "black"},
+        logo : {color: "blackRed"},
     }
     return(
         <section className={Style.container}>
@@ -57,8 +57,8 @@ function Parte(){
                     <CardHeader>
                         <Heading size='xl'className={Style.cardTitle}> Empresa Privada </Heading>
                     </CardHeader>
-                    <CardBody>
-                        <Image src={ImgEmpPriv} alt=""/>
+                    <CardBody className={Style.cardImg}>
+                        <Image src={ImgEmpPriv} alt=""  />
                     </CardBody>
                     <CardFooter>
                         <Text className={Style.cardContent}>Proyecto de comunicación corporativa y desarrollo de contenidos para la compañía.</Text>

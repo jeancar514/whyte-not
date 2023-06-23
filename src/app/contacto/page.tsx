@@ -7,8 +7,8 @@ import Form from '@/components/form/fom';
 function Contacto(){
     const navStyle = {
         fondo : {background:"linear-gradient(#ff3030,#ca1111)"},
-        letter : {color: "white"},
-        logo : {color: "white"},
+        letter : {color: "black"},
+        logo : {color: "blackRed"},
     }
     return(
         <section className={Style.container}>

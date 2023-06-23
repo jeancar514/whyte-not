@@ -34,7 +34,6 @@
 
 .footerListEmail{
     border-right: 2px solid #7c0000;
-
 }
 
 .footerLinkVentas {
@@ -114,5 +113,15 @@
     }
     .footerlink{
         font-size: 1em;
+    }
+}
+
+@media (max-width: 560px) {
+    .footer section{
+        flex-direction: column;
+    }
+    .footerListEmail li {
+        text-align: center;
+        font-size: 0.9em;
     }
 }

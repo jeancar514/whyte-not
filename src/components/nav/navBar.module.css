@@ -73,4 +73,16 @@
     .menuPhone{
         display:inline;
     }
+    .menuPhoneIcon{    
+        font-size: 1.2em;
+    }
+    .navBar{
+        padding: 5px 5px;
+    }
+    .nav{
+        padding: 5px 10px;
+    }
+    .logo{
+        height: 30px;
+    }
 }

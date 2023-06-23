@@ -143,3 +143,45 @@
     text-align: center;
 }
 
+
+@media (max-width: 900px) {
+    .title{
+        font-size: 1.5em;
+    }
+    .sectionWhyChoose main {
+        flex-direction: column;
+        text-align: center;
+    }
+    .sectionWhyChoose main >*{
+        margin: 20px ;
+    }
+    .cardHeaderTitle{
+        font-size: 1em;
+    }
+    .sectionWhyChoose h3{
+        font-size: 1em;
+    }
+    .cardHeaderTitle h2{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 560px) {
+    .containerCard{
+        margin:20px 2% ;
+    }
+    .title{
+        font-size: 1.1em;
+    }
+    .cardHeader{
+        flex-direction: column;
+    }
+    .button{
+        padding: 5px 15px !important;
+        font-size:0.7em ;
+    }
+    .cardHeaderTitle{
+        display: flex;
+        flex-direction: column;
+    }
+}

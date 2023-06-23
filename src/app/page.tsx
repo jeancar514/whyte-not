@@ -67,7 +67,7 @@ export default function Page() {
 
       title : "Smart Communication Platform (SCP)",
 
-      text : "SCP es una plataforma tecnológica audiovisual multicontenidos  que diseña, administra y distribuye de manera intuitiva y remota contenidos.   /n  Creada  para informar, educar, entretener, integrar y desarrollar estrategias de comunicación corporativas, educacionales y de marketing comercial, a través de productos y servicios audiovisuales.",
+      text : "SCP es una plataforma tecnológica audiovisual multicontenidos  que diseña, administra y distribuye de manera intuitiva y remota contenidos. Creada  para informar, educar, entretener, integrar y desarrollar estrategias de comunicación corporativas, educacionales y de marketing comercial, a través de productos y servicios audiovisuales.",
       
       icon :"",
 
@@ -130,7 +130,7 @@ export default function Page() {
               </Stack>
             </CardHeader>
             <CardBody>
-              <Text>
+              <Text className={Style.cardContentText}>
               {cardContent[buttonSelected-1].text} 
               </Text>
               <div className={Style.cardSectionList}>

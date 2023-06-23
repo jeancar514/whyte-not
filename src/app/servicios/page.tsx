@@ -14,6 +14,7 @@ import ImgService8 from "../../../public/img/service/service8.png"
 import ImgService9 from "../../../public/img/service/service9.png"
 import * as React from 'react';
 import { Button } from '@chakra-ui/react';
+import ButtomWhat from '@/components/buttomWhat/buttomWhat';
 
 function Servicios(){
     const navStyle = {
@@ -146,6 +147,7 @@ function Servicios(){
                     )
                 })
             }
+            <ButtomWhat></ButtomWhat>
             <Footer></Footer>
         </section>
     )

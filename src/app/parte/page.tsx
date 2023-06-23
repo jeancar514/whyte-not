@@ -10,6 +10,7 @@ import ImgTv3 from "../../../public/img/parte/tv3.png"
 import ImgTv4 from "../../../public/img/parte/tv4.png"
 import ImgEmpPriv from "../../../public/img/parte/samsung.png"
 import { Button, Card, CardBody, CardFooter, CardHeader, Heading,Link,Text } from '@chakra-ui/react';
+import ButtomWhat from '@/components/buttomWhat/buttomWhat';
 
 
 function Parte(){
@@ -72,7 +73,8 @@ function Parte(){
                 <Button variant='solid' colorScheme='red' >
                     <Link  className={Style.contactoLink} href={'https://wa.link/t1uxho'}>CONTRÁTANOS</Link>
                 </Button> 
-            </section>          
+            </section> 
+            <ButtomWhat></ButtomWhat>         
             <Footer></Footer>
         </section>
     )

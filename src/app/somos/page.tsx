@@ -8,6 +8,7 @@ import imgProposito from "../../../public/img/somos/proposito.png"
 import  Style from './page.module.css';
 import { Box,Card, CardBody, CardHeader, Heading, SimpleGrid, Text} from '@chakra-ui/react';
 import Footer from '@/components/footer/footer';
+import ButtomWhat from '@/components/buttomWhat/buttomWhat';
 
 
 
@@ -96,6 +97,7 @@ function Somos(){
                     </SimpleGrid>
                 </section>
             </main>
+            <ButtomWhat></ButtomWhat>
             <Footer></Footer>
         </section>
     )

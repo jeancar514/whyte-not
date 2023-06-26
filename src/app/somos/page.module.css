@@ -1,6 +1,28 @@
+.imgBanner{
+    margin-top: 50px;
+    width:100%;
+}
+.buttonBanner{
+    border: none;
+    color: white;
+    background: black;
+    position: absolute;
+    padding: 10px 20px;
+    top: 25vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    border-radius: 0px;
+    font-size: 1.5em;
+    font-weight: 700;
+    height: min-content;
+}
+.buttonBanner:hover{
+    color: #7c0000;
+    background: white !important;
+}
 .banner{
     background: linear-gradient(#ff3030,#ca1111);
-    padding-top: 90px;
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -33,8 +55,9 @@
 }
 .cardAcercaTitle{
     text-align: center;
-    color: #ca1111;
-    font-size: 1.5em;
+    font-size: 2.5em;
+    font-weight: 900;
+    color: black;
 }
 .cardAcercaHeader{
     display: flex; 
@@ -58,13 +81,10 @@
 }
 
 .DifereciadoresTitle{
-    text-align: start;
-    color: #ca1111;
-    font-size: 1.5em;
-    padding: 5px 0px ;
-}
-.DifereciadoresTitle:nth-child(1){
-    color: #7c0000;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 900;
+    color: black;
 }
 .containerCardDifereciadores{
     margin-top:30px
@@ -84,6 +104,10 @@
 
 
 @media (max-width: 900px) {
+    .buttonBanner{
+        font-size: 1em;
+        padding: 7px 15px;
+    }
     .banner h2{
         font-size: 1.6em;
     }
@@ -102,8 +126,12 @@
 }
 
 @media (max-width: 560px) {
+    .buttonBanner{
+        font-size: 0.8em;
+        padding: 3px 10px;
+    }
     .banner h2{
-        font-size: 1.1em;
+        font-size: 0.9em;
     }
     .imgLineasFondo{
         width: 70%;
@@ -129,6 +157,7 @@
     }
     .cardAcercaTitle{
         font-size: 1.15em;
+        padding: 0px;
     }
     .imgHeader{
         width: 50%;
@@ -136,5 +165,8 @@
     .cardAcercaText{
         font-size: 1em;
         text-align: center;
+    }
+    .cardAcercaHeader{
+        padding-bottom:0px ;
     }
 }

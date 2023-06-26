@@ -1,8 +1,43 @@
+.title{
+    font-size: 1.5em ;
+    font-weight: 500;
+    margin:10px 5%;
+    text-align: center;
+}
+.banner{
+    margin-top:50px;
+    width: 100%;
+}
+.buttonBanner{
+    border: none;
+    color: #7c0000;
+    background: white;
+    position: absolute;
+    padding: 10px 25px;
+    top: 27vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    border-radius: 0px;
+    font-size: 1.5em;
+    font-weight: 700;
+    height:min-content ;
+}
+.buttonBanner:hover{
+    color: white;
+    background: #7c0000 !important;
+}
 .container{
     height: 100vh;
 }
 .containerCarroussel{
-    background: linear-gradient(white,rgb(245, 245, 255));
+    margin-top: 95px;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.containerCarroussel2{
     margin-top: 95px;
     display: flex;
     align-items:center;
@@ -14,47 +49,52 @@
     font-weight: 700;
     color: #7c0000;
     text-align: center;
+    margin: 0 5%;
+}
+.containerCarroussel2 h3{
+    font-size: 2em;
+    font-weight: 700;
+    color: #7c0000;
+    text-align: center;
 }
 .slider {
+    width: calc(200px * 6);
+    height: auto;
+    overflow: hidden;
+}
+.slider2 {
     width: calc(200px * 4);
     height: auto;
     overflow: hidden;
 }
-
 .slider .slidetrack {
     display: flex;
     animation: scroll 10s linear infinite;
     -webkit-animation: scroll 10s linear infinite;
+    width: calc(200px * 12);
+}
+.slider2 .slidetrack2 {
+    display: flex;
+    animation: scroll2 10s linear infinite;
+    -webkit-animation: scroll2 10s linear infinite;
     width: calc(200px * 8);
 }
-
 .slider .slide {
-    width: 200px;
+    width: 180px;
+    margin: 10px ;
 }
-
+.slider2 .slide2 {
+    width: 180px;
+    margin: 10px ;
+}
 .slider .slide img {
     width: 100%;
 }
-.containerCard{
-    display:flex;
-    justify-content:center;
-}
-.card{
-    box-shadow: none;
-    width:90%;
-}
-.cardContent{
-    font-size:1.8em;
-    text-align: center;
-}
-.cardImg{
-    display: flex;
-    justify-content: center;
+
+.slider2 .slide2 img {
+    width: 100%;
 }
 
-.cardImg{
-    width: 80%;
-}
 
 .containerContacto{
     display:flex;
@@ -68,12 +108,46 @@
     margin:10px 0px; 
 }
 .containerContacto h3{
-    font-size:1.5em;
+    padding:30px 10px;
+    background-color: #ff3030;
+    color :white;
+    font-size:2em;
+    font-weight: 700;
+    width: 100%; 
+    text-transform: uppercase;
 }
 .contactoLink{
     text-decoration:none; 
 }
+
+.redesSociales{
+    display: flex;
+    justify-content: space-around;
+}
+.redesSociales img{
+    margin: 15px 5px;
+}
+.redesSociales div h4{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.redesSociales>*{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
 @keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 6));
+        transform: translateX(calc(-200px * 6));
+    }
+}
+
+@keyframes scroll2 {
     0% {
         -webkit-transform: translateX(0);
         transform: translateX(0);
@@ -83,37 +157,59 @@
         transform: translateX(calc(-200px * 4));
     }
 }
-
-
 @media (max-width: 900px) {
+    .title{
+        font-size: 1.2em ;
+    }
+    .buttonBanner{
+        font-size: 1em;
+        padding: 7px 15px;
+    }
     .containerCarroussel h3{
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
-    .cardTitle{
-        font-size: 1.5em;
-    }
-    .cardContent{
-        font-size:1.3em;
+    .containerCarroussel2 h3{
+        font-size: 1.2em;
     }
     .containerContacto h3{
         font-size: 1.3em;
     }
     .slider {
+        width: calc(100px * 6);
+    }
+    .slider2 {
         width: calc(150px * 4);
     }
     
     .slider .slidetrack {
+        width: calc(100px * 12);
+    }
+    .slider2 .slidetrack2 {
         width: calc(150px * 8);
     }
-    
     .slider .slide {
+        width: 100px;
+    }
+    .slider2 .slide2 {
         width: 150px;
     }
-    
     .slider .slide img {
         width: 100%;
     }
+    .slider2 .slide2 img {
+        width: 100%;
+    }
     @keyframes scroll {
+        0% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+        100% {
+            -webkit-transform: translateX(calc(-100px * 6));
+            transform: translateX(calc(-100px * 6));
+        }
+    }
+    @keyframes scroll2 {
         0% {
             -webkit-transform: translateX(0);
             transform: translateX(0);
@@ -126,34 +222,69 @@
 }
 
 @media (max-width: 560px) {
-    .containerCarroussel h3{
-        font-size: 1.1em;
-    }
-    .cardTitle{
-        font-size: 1.1em;
-    }
-    .cardContent{
-        font-size:1em;
-    }
-    .containerContacto h3{
+    .title{
         font-size: 1em;
     }
+    .buttonBanner{
+        font-size: 0.8em;
+        padding: 3px 10px;
+    }
+    .redesSociales{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .redesSociales>*{
+        width: 60%;
+    }
+    .redesSociales div h4{
+        font-size: 1em;
+    }
+    .containerCarroussel h3{
+        font-size: 1em;
+    }
+    .containerCarroussel2 h3{
+        font-size: 1em;
+    }
+    .containerContacto h3{
+        font-size: 0.8em;
+        padding: 20px 10px;
+    }
     .slider {
+        width: calc(65px * 6);
+    }
+    .slider2 {
         width: calc(65px * 4);
     }
-    
     .slider .slidetrack {
+        width: calc(65px * 12);
+    }
+    .slider2 .slidetrack2 {
         width: calc(65px * 8);
     }
-    
     .slider .slide {
         width: 65px;
     }
-    
+    .slider2 .slide2 {
+        width: 65px;
+    }
     .slider .slide img {
         width: 100%;
     }
+    .slider2 .slide2 img {
+        width: 100%;
+    }
     @keyframes scroll {
+        0% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+        100% {
+            -webkit-transform: translateX(calc(65px * 6));
+            transform: translateX(calc(-65px * 6));
+        }
+    }
+    @keyframes scroll2 {
         0% {
             -webkit-transform: translateX(0);
             transform: translateX(0);

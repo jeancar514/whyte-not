@@ -2,11 +2,12 @@
 import NavBar from '@/components/nav/navBar';
 import * as React from 'react';
 import Image from 'next/image';
-import lineasFondo from "../../../public/img/somos/lineasfondo.png"
-import imgHeader from "../../../public/img/somos/imgHeader.png"
-import imgProposito from "../../../public/img/somos/proposito.png"
+import banner from "../../../public/img/somos/banner.png";
+import lineasFondo from "../../../public/img/somos/lineasfondo.png";
+import imgHeader from "../../../public/img/somos/imgHeader.png";
+import imgProposito from "../../../public/img/somos/proposito.png";
 import  Style from './page.module.css';
-import { Box,Card, CardBody, CardHeader, Heading, SimpleGrid, Text} from '@chakra-ui/react';
+import { Box,Button,Card, CardBody, CardHeader, Heading, SimpleGrid, Text} from '@chakra-ui/react';
 import Footer from '@/components/footer/footer';
 import ButtomWhat from '@/components/buttomWhat/buttomWhat';
 
@@ -21,37 +22,44 @@ function Somos(){
     return(
         <section>
             <NavBar navBarStyle={navStyle}></NavBar>
-            <header className={Style.banner}>
-                <h2>
-                    ¡Todo lo hacemos posible, comentanos tu idea y nosotros te la hacemos realidad! 
-                </h2>
-                <Image 
-                    className={Style.imgLineasFondo}
-                    src={lineasFondo}
-                    alt='image lineas para el fondo'
-                    height={600}
-                    width={600}
-                />
-                <Image 
-                    className={Style.imgHeader}
-                    src={imgHeader}
-                    alt='image lineas para el fondo'
-                    height={400}
-                    width={400}
-                />
+            <header >
+                <div>
+                    <Image 
+                        className={Style.imgBanner}
+                        src={banner}
+                        alt='image lineas para el fondo'
+                        height={600}
+                        width={600}
+                    />
+                    <Button variant='solid' className={Style.buttonBanner} colorScheme='red' size='lg' >
+                        Contáctanos
+                    </Button>
+                </div>
+                <div className={Style.banner}>
+                    <h2>
+                        ¡Todo lo hacemos posible, comentanos tu idea y nosotros te la hacemos realidad! 
+                    </h2>
+                    <Image 
+                        className={Style.imgLineasFondo}
+                        src={lineasFondo}
+                        alt='image lineas para el fondo'
+                        height={590}
+                        width={590}
+                    />
+                    <Image 
+                        className={Style.imgHeader}
+                        src={imgHeader}
+                        alt='image lineas para el fondo'
+                        height={400}
+                        width={400}
+                    />
+                </div>
             </header>
             <main className={Style.mainCardAcerca}>
                 <section className={Style.containerCardAcerca}>
                     <Card align='center' className={Style.cardAcerca} >
                         <CardHeader className={Style.cardAcercaHeader}>
-                            <Image 
-                                className={Style.imgHeader}
-                                src={imgProposito}
-                                alt='image lineas para el fondo'
-                                height={200}
-                                width={200}
-                            />
-                            <Heading size='md' className={Style.cardAcercaTitle}>Nuestro propósito</Heading>
+                            <Heading size='md' className={Style.cardAcercaTitle} textTransform='uppercase' >Nuestro Propósito</Heading>
                         </CardHeader>
                         <CardBody>
                             <Box>
@@ -66,7 +74,7 @@ function Somos(){
                     </Card>
                 </section>
                 <section className={Style.containerDifereciadores}>
-                    <Heading size='md' className={Style.DifereciadoresTitle}>
+                    <Heading size='md' className={Style.DifereciadoresTitle} textTransform='uppercase'>
                         Nuestros principales diferenciadores
                     </Heading>
                     <SimpleGrid spacing={4} templateColumns='repeat(auto-fill, minmax(30%, 1fr))' className={Style.containerCardDifereciadores}>

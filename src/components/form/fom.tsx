@@ -106,6 +106,7 @@ function Form(){
                         </div>
                         <div>
                             <Select 
+                                className={Style.select}
                                 placeholder='¿Qué servicio te interesa?'
                                 value={service}
                                 onChange={(e) => setService(Number(e.target.value))}

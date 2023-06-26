@@ -8,10 +8,10 @@ import ButtomWhat from '@/components/buttomWhat/buttomWhat';
 
 function Contacto(){
     const navStyle = {
-        fondo : {background:"linear-gradient(#ff3030,#ca1111)"},
-        letter : {color: "black"},
+        fondo : {background:"linear-gradient(white,rgb(245, 245, 255))"},
+        letter : {color: "#7c0000"},
         logo : {color: "blackRed"},
-    }
+      }
     return(
         <section className={Style.container}>
             <NavBar navBarStyle={navStyle}></NavBar>

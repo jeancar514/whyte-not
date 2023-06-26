@@ -43,6 +43,10 @@
     background-color: white !important;
 }
 
+.select{
+    background-color: white;
+}
+
 @media (max-width: 900px) {
     .card{
         width: 90%;

@@ -18,10 +18,10 @@ import ButtomWhat from '@/components/buttomWhat/buttomWhat';
 
 function Servicios(){
     const navStyle = {
-        fondo : {background:"linear-gradient(#ff3030,#ca1111)"},
-        letter : {color: "white"},
-        logo : {color: "white"},
-    }
+        fondo : {background:"linear-gradient(white,rgb(245, 245, 255))"},
+        letter : {color: "#7c0000"},
+        logo : {color: "blackRed"},
+      }
     const services = [
         {
             serviceTitle: "Posicionamiento SEO",
@@ -75,16 +75,22 @@ function Servicios(){
     return(
         <section>
             <NavBar navBarStyle={navStyle}></NavBar>
+            <video autoPlay loop className={Style.banner}>
+                <source src="/img/service/banner.mp4" type="video/mp4" />
+            </video>
+            <Button variant='solid' className={Style.buttonBanner}  colorScheme='red' size='lg' >
+                Contáctanos
+            </Button>
             <section className={Style.sectionService}>
                     <Image 
+                        data-aos="fade-right"
                         className={Style.imgService}
                         src={ImgService1}
                         alt='image lineas para el fondo'
                         height={400}
                         width={400}
                     />
-
-                    <div className={Style.sectionServiceContent}>
+                    <div className={Style.sectionServiceContent} data-aos="fade-right">
                         <h2>
                             Investigación de mercado
                         </h2>
@@ -100,8 +106,9 @@ function Servicios(){
                 services.map((service,id) =>{
                     if(id % 2 != 0){
                         return (
-                        <section key={id} className={Style.sectionServiceOne}>
+                        <section key={id} className={Style.sectionServiceOne} >
                             <Image 
+                                data-aos="fade-right"
                                 className={Style.imgService}
                                 src={service.serviceImg}
                                 alt='image lineas para el fondo'
@@ -109,7 +116,7 @@ function Servicios(){
                                 width={service.serviceImgSize}
                             />
 
-                            <div className={Style.sectionServiceContent}>
+                            <div className={Style.sectionServiceContent} data-aos="fade-right">
                                 <h2>
                                 {service.serviceTitle}
                                 </h2>
@@ -125,7 +132,7 @@ function Servicios(){
                     }
                     return(
                         <section key={id} className={Style.sectionServiceTwo}>
-                            <div className={Style.sectionServiceContent}>
+                            <div className={Style.sectionServiceContent} data-aos="fade-left">
                                 <h2>
                                 {service.serviceTitle}
                                 </h2>
@@ -137,6 +144,7 @@ function Servicios(){
                                 </Button>
                             </div>
                             <Image 
+                                data-aos="fade-left"
                                 className={Style.imgService}
                                 src={service.serviceImg}
                                 alt='image lineas para el fondo'

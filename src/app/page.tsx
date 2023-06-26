@@ -12,6 +12,12 @@ import likeIcon from '../../public/img/home/sectionChooseIcon/like.svg'
 import NavBar from '@/components/nav/navBar';
 import Footer from '@/components/footer/footer';
 import ButtomWhat from '@/components/buttomWhat/buttomWhat';
+import { Montserrat } from 'next/font/google'
+ 
+const montserrat = Montserrat({
+  weight: 'variable',
+  subsets: ['latin'],
+})
 
 export default function Page() {
   const [buttonSelected, setButtonSelected] = useState(1);
@@ -82,10 +88,6 @@ export default function Page() {
       img:ImgCardThree
     },
   ]
-
-
-
-
   const navStyle = {
     fondo : {background:"linear-gradient(white,rgb(245, 245, 255))"},
     letter : {color: "#7c0000"},
@@ -93,7 +95,7 @@ export default function Page() {
   }
 
   return (
-    <section>
+    <section className={montserrat.className}>
       <NavBar navBarStyle={navStyle}></NavBar>
       <video autoPlay loop className={Style.banner}>
         <source src="/video/banner/TODOESPOSIBLE.mp4" />
@@ -177,7 +179,7 @@ export default function Page() {
             </CardHeader>
             <CardBody>
               <Text className={Style.sectionWhyChooseCardContent}>
-                En Whytenot nos comprometemos contigo y tu proyecto, involucrándonos como si fuera nuestro.
+                En Whyte Not nos comprometemos contigo y tu proyecto, involucrándonos como si fuera nuestro.
               </Text>
             </CardBody>
           </Card>

@@ -100,16 +100,16 @@ export default function Page() {
       <video autoPlay loop className={Style.banner}>
         <source src="/video/banner/TODOESPOSIBLE.mp4" />
       </video>
-      <h2 className={Style.title}>
+      <h2 className={Style.title} data-aos="fade-left" >
         Trabajando en conjunto podemos potenciar por medio del contenido, plataformas y herramientas de marketing digital para tu marca, empresa, negocio, comunicación corporativa, educacional y mucho más.
       </h2>
-      <section className={Style.sectionCards}>
+      <section className={Style.sectionCards} >
         <div className={Style.containerButton}>
           <Button  className={Style.button} style={colorButtonSelected[0]} onClick={()=>{cambiarColor(1)}}>CONTENIDOS</Button>
           <Button  className={Style.button} style={colorButtonSelected[1]} onClick={()=>{cambiarColor(2)}}>MARKETING DIGITAL</Button>          
           <Button  className={Style.button} style={colorButtonSelected[2]} onClick={()=>{cambiarColor(3)}}>SCP</Button>
         </div>
-        <section className={Style.containerCard}>
+        <section className={Style.containerCard}  data-aos="flip-left" data-aos-duration="2000">
           <Card align='center' className= {Style.card }>
             <CardHeader className={Style.cardHeader}>
               <div className={Style.cardHeaderTitle}>
@@ -156,7 +156,7 @@ export default function Page() {
         </header>
         <main>
           <section >
-            <h4>¿Por qué elegir a Whytenot?</h4>
+            <h4>¿Por qué elegir a Whyte not?</h4>
             <Button variant='solid' colorScheme='red'>
               Cotiza con nosotros
             </Button>

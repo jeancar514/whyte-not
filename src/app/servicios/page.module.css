@@ -3,29 +3,32 @@
     width: 100%;
 }
 .buttonBanner{
-    border: none;
-    color: #7c0000;
-    background: white;
+    background: transparent;
     position: absolute;
-    padding: 7px 15px;
     top: 27vw;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 5;
-    border-radius: 0px;
+}
+.buttonBanner button{
+    padding: 10px 20px;
     font-size: 1.5em;
     font-weight: 700;
     height: min-content;
-}
-.buttonBanner:hover{
+    border: none;
+    border-radius: 0px;
     color: white;
-    background: #7c0000 !important;
+    background: #7c0000;
+}
+.buttonBanner button:hover{
+    color: #7c0000;
+    background: white !important;
 }
 
 .sectionService{
     background: linear-gradient(white,rgb(245, 245, 255));
     display: flex;
-    padding:20px;
+    padding:20px 40px;
     justify-content:space-between;
     align-items: center;
 }
@@ -34,7 +37,6 @@
     color: #7c0000;
     font-size: 2em;
     font-weight: 500;
-    text-align: center;
     margin: 0px 10px;
     z-index: 5;
 }
@@ -43,14 +45,13 @@
     color: #7c0000;
     font-size: 1.2em;
     font-weight: 500;
-    text-align: center;
     margin: 0px 10px;
     z-index: 5;
 }
 .sectionServiceContent{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: end;
 }
 .sectionServiceContent h2{
     font-size: 2em ;
@@ -59,13 +60,14 @@
 }
 .sectionServiceContent > *{
     margin: 10px 0px !important;
+    text-align: end;
 }
 .sectionServiceOne{
     background: linear-gradient(white,rgb(245, 245, 255));
     display: flex;
     justify-content:space-between;
-    align-items: center;
-    padding:20px;
+    align-items: end;
+    padding:20px 40px;
 }
 .sectionServiceOne div h2{
     color: #7c0000;
@@ -80,7 +82,7 @@
     color: #7c0000;
     font-size: 1.2em;
     font-weight: 500;
-    text-align: center;
+    text-align: end;
     margin: 0px 10px;
     z-index: 5;
 }
@@ -92,10 +94,24 @@
 
 .sectionServiceTwo{
     background: linear-gradient(#ff3030,#ca1111);
-    padding:20px;
+    padding:20px 40px;
     display: flex;
     justify-content:space-between;
     align-items: center;
+}
+.sectionServiceTwo div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.sectionServiceTwo div h2{
+    font-size: 2em ;
+    font-weight: 900 !important;
+    text-transform: uppercase !important;
+}
+.sectionServiceTwo div > *{
+    margin: 10px 0px !important;
+    text-align: start;
 }
 .sectionServiceTwo div h2{
     color: white;
@@ -110,7 +126,7 @@
     color: white;
     font-size: 1.2em;
     font-weight: 500;
-    text-align: center;
+    text-align: sta;
     margin: 0px 10px;
     z-index: 5;
 }

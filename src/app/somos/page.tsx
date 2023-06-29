@@ -24,19 +24,17 @@ function Somos(){
             <NavBar navBarStyle={navStyle}></NavBar>
             <header >
                 <div>
-                    <Image 
-                        className={Style.imgBanner}
-                        src={banner}
-                        alt='image lineas para el fondo'
-                        height={600}
-                        width={600}
-                    />
-                    <Button variant='solid' className={Style.buttonBanner} colorScheme='red' size='lg' >
-                        Contáctanos
-                    </Button>
+                    <video autoPlay loop className={Style.banner}>
+                        <source src="/video/banner/TODOESPOSIBLE.mp4" />
+                    </video>
+                    <div className={Style.buttonBanner}>
+                        <Button  data-aos="flip-left"  variant='solid' colorScheme='red' size='lg' >
+                            Contáctanos
+                        </Button>
+                    </div>
                 </div>
-                <div className={Style.banner}>
-                    <h2>
+                <div className={Style.banner}  >
+                    <h2  data-aos="fade-right" >
                         ¡Todo lo hacemos posible, comentanos tu idea y nosotros te la hacemos realidad! 
                     </h2>
                     <Image 
@@ -46,7 +44,7 @@ function Somos(){
                         height={590}
                         width={590}
                     />
-                    <Image 
+                    <Image
                         className={Style.imgHeader}
                         src={imgHeader}
                         alt='image lineas para el fondo'
@@ -62,7 +60,7 @@ function Somos(){
                             <Heading size='md' className={Style.cardAcercaTitle} textTransform='uppercase' >Nuestro Propósito</Heading>
                         </CardHeader>
                         <CardBody>
-                            <Box>
+                            <Box data-aos="fade-right" >
                                 <Text  fontSize='sm' className={Style.cardAcercaText}>
                                     Materializar, asesorar y desarrollar las ideas de nuestros clientes, potenciando negocios en el entorno digital, para mejorar la calidad de vida en Chile, aunque no tenemos fronteras.
                                 </Text>
@@ -77,8 +75,8 @@ function Somos(){
                     <Heading size='md' className={Style.DifereciadoresTitle} textTransform='uppercase'>
                         Nuestros principales diferenciadores
                     </Heading>
-                    <SimpleGrid spacing={4} templateColumns='repeat(auto-fill, minmax(30%, 1fr))' className={Style.containerCardDifereciadores}>
-                        <Card className={Style.cardDifereciadores}>
+                    <SimpleGrid data-aos="fade-up"   spacing={4} templateColumns='repeat(auto-fill, minmax(30%, 1fr))' className={Style.containerCardDifereciadores}>
+                        <Card   className={Style.cardDifereciadores}>
                             <CardHeader>
                             <Heading size='md' > Experiencia </Heading>
                             </CardHeader>

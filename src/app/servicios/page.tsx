@@ -78,9 +78,11 @@ function Servicios(){
             <video autoPlay loop className={Style.banner}>
                 <source src="/img/service/banner.mp4" type="video/mp4" />
             </video>
-            <Button variant='solid' className={Style.buttonBanner}  colorScheme='red' size='lg' >
-                Contáctanos
-            </Button>
+            <div className={Style.buttonBanner}>
+                <Button  variant='solid' data-aos="flip-left"   colorScheme='red' size='lg' >
+                    Contáctanos
+                </Button>
+            </div>
             <section className={Style.sectionService}>
                     <Image 
                         data-aos="fade-right"
@@ -97,7 +99,7 @@ function Servicios(){
                         <p>
                         Contamos con un equipo capacitado en evaluar, diagnosticar y delinear una estrategia de marketing adecuada para posicionar su marca y obtener ventajas sobre sus marcas competidoras.
                         </p>
-                        <Button variant='solid' colorScheme='red'>
+                        <Button  variant='solid' colorScheme='red'>
                             CONTRÁTANOS
                         </Button>
                     </div>
@@ -132,7 +134,7 @@ function Servicios(){
                     }
                     return(
                         <section key={id} className={Style.sectionServiceTwo}>
-                            <div className={Style.sectionServiceContent} data-aos="fade-left">
+                            <div className={Style.sectionServiceContentTwo} data-aos="fade-left">
                                 <h2>
                                 {service.serviceTitle}
                                 </h2>

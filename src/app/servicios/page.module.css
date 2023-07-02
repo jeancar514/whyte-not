@@ -172,8 +172,8 @@
 
 @media (max-width: 560px) {
     .buttonBanner{
-        font-size: 0.8em;
-        padding: 3px 10px;
+        font-size: 0.5em;
+        padding: 0px;
     }
     .sectionService div h2{
         font-size: 1.2em;

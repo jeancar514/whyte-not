@@ -2,6 +2,12 @@
     margin-top: 50px;
     width: 100%;
 }
+.link{
+    text-decoration:none;
+}
+.link:hover{
+    text-decoration:none;
+}
 .buttonBanner{
     background: transparent;
     position: absolute;

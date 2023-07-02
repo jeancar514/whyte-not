@@ -10,14 +10,14 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: #7c0000;   
+    color: black;   
     font-size: 1em;
     font-weight: 600;
 }
 .footer section p{
     font-size: 1.5em;
     font-weight: 700;
-    color: #7c0000;
+    color: black;
     text-align: center;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .footerListEmail{
-    border-right: 2px solid #7c0000;
+    border-right: 2px solid black;
 }
 
 .footerLinkVentas {
@@ -46,7 +46,7 @@
     text-decoration: none;
 }
 .footerlink:hover{
-    color:#ff2b2b;
+    color:#cd2222;
     text-decoration: none;
 }
 .footerMethodPay{

@@ -6,7 +6,8 @@
     margin: 20px 10px;
     text-align: center;
     font-size: 1.9em;
-    color: #7c0000;
+    font-weight: 400;
+    color: black;
 }
 .sectionCards{
     padding: 20px 10px;
@@ -85,7 +86,7 @@
 .sectionWhyChoose header Button{
     margin-top: 20px;
     background-color: white;
-    color: #7c0000;
+    color: black;
     font-weight: 700;
     font-size: 0.7em;
 }
@@ -134,11 +135,11 @@
 }
 
 .sectionWhyChooseCardTitle{
-    color: #7c0000;
+    color: black;
 }
 
 .sectionWhyChooseCardContent{
-    color: #7c0000;
+    color: black;
     font-weight: 500;
     text-align: center;
 }

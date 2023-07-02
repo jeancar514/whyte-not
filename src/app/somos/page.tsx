@@ -2,12 +2,10 @@
 import NavBar from '@/components/nav/navBar';
 import * as React from 'react';
 import Image from 'next/image';
-import banner from "../../../public/img/somos/banner.png";
 import lineasFondo from "../../../public/img/somos/lineasfondo.png";
 import imgHeader from "../../../public/img/somos/imgHeader.png";
-import imgProposito from "../../../public/img/somos/proposito.png";
 import  Style from './page.module.css';
-import { Box,Button,Card, CardBody, CardHeader, Heading, SimpleGrid, Text} from '@chakra-ui/react';
+import { Box,Button,Card, CardBody, CardHeader, Heading, Link, SimpleGrid, Text} from '@chakra-ui/react';
 import Footer from '@/components/footer/footer';
 import ButtomWhat from '@/components/buttomWhat/buttomWhat';
 
@@ -16,7 +14,7 @@ import ButtomWhat from '@/components/buttomWhat/buttomWhat';
 function Somos(){
     const navStyle = {
         fondo : {background:"linear-gradient(white,rgb(245, 245, 255))"},
-        letter : {color: "#7c0000"},
+        letter : {color: "black"},
         logo : {color: "blackRed"},
       }
     return(
@@ -29,7 +27,7 @@ function Somos(){
                     </video>
                     <div className={Style.buttonBanner}>
                         <Button  data-aos="flip-left"  variant='solid' colorScheme='red' size='lg' >
-                            Contáctanos
+                            <Link className={Style.link} href={'https://wa.link/t1uxho'}  target="_blank">CONTRÁTANOS</Link>
                         </Button>
                     </div>
                 </div>

@@ -13,13 +13,13 @@ import ImgService7 from "../../../public/img/service/service7.png"
 import ImgService8 from "../../../public/img/service/service8.png"
 import ImgService9 from "../../../public/img/service/service9.png"
 import * as React from 'react';
-import { Button } from '@chakra-ui/react';
+import { Button, Link } from '@chakra-ui/react';
 import ButtomWhat from '@/components/buttomWhat/buttomWhat';
 
 function Servicios(){
     const navStyle = {
         fondo : {background:"linear-gradient(white,rgb(245, 245, 255))"},
-        letter : {color: "#7c0000"},
+        letter : {color: "black"},
         logo : {color: "blackRed"},
       }
     const services = [
@@ -80,7 +80,7 @@ function Servicios(){
             </video>
             <div className={Style.buttonBanner}>
                 <Button  variant='solid' data-aos="flip-left"   colorScheme='red' size='lg' >
-                    Contáctanos
+                    <Link className={Style.link} href={'https://wa.link/t1uxho'}  target="_blank">CONTRÁTANOS</Link>
                 </Button>
             </div>
             <section className={Style.sectionService}>

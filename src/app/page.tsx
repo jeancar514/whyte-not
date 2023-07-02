@@ -90,7 +90,7 @@ export default function Page() {
   ]
   const navStyle = {
     fondo : {background:"linear-gradient(white,rgb(245, 245, 255))"},
-    letter : {color: "#7c0000"},
+    letter : {color: "black"},
     logo : {color: "blackRed"},
   }
 

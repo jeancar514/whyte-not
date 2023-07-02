@@ -75,7 +75,7 @@ function Servicios(){
     return(
         <section>
             <NavBar navBarStyle={navStyle}></NavBar>
-            <video autoPlay loop className={Style.banner}>
+            <video autoPlay muted loop className={Style.banner}>
                 <source src="/img/service/banner.mp4" type="video/mp4" />
             </video>
             <div className={Style.buttonBanner}>

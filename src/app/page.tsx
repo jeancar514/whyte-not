@@ -97,7 +97,7 @@ export default function Page() {
   return (
     <section className={montserrat.className}>
       <NavBar navBarStyle={navStyle}></NavBar>
-      <video autoPlay loop className={Style.banner}>
+      <video  autoPlay muted loop className={Style.banner}>
         <source src="/video/banner/HOME.mp4" />
       </video>
       <h2 className={Style.title} data-aos="fade-left" >

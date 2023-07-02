@@ -24,7 +24,7 @@ function Parte(){
     return(
         <section className={Style.container}>
             <NavBar navBarStyle={navStyle}></NavBar>
-            <video autoPlay loop className={Style.banner}>
+            <video autoPlay muted loop className={Style.banner}>
                 <source src="/img/parte/banner.mp4" type="video/mp4" />
             </video>
             <Button variant='solid' className={Style.buttonBanner} colorScheme='red' size='lg' >

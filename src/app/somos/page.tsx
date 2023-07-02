@@ -22,7 +22,7 @@ function Somos(){
             <NavBar navBarStyle={navStyle}></NavBar>
             <header >
                 <div>
-                    <video autoPlay loop className={Style.banner}>
+                    <video autoPlay muted loop className={Style.banner}>
                         <source src="/video/banner/TODOESPOSIBLE.mp4" />
                     </video>
                     <div className={Style.buttonBanner}>

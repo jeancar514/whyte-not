@@ -34,7 +34,7 @@ function Parte(){
                 Estas son algunas de las empresas con las que whyte not ha tenido el privilegio de trabajar en proyectos de marketing digital.  Estamos orgullosos de haber colaborado con cada una de ellas y estamos agradecidos por la confianza que han depositado en nosotros. Entre las empresas con las que hemos trabajado se encuentran algunas reconocidas como marcas lideres en sus respectivos sectores, asi como pequeñas y medianas empresas que buscan hacer crecer su presencia online.
             </h3>
             <section className={Style.containerCarroussel}>
-                <h3>Fuimos parte de proyectos de markting digita para empresas como :</h3>
+                <h3>Fuimos parte de proyectos de marketing digita para empresas como :</h3>
                 <Slider></Slider>
             </section>
             <section className={Style.containerCarroussel2}>

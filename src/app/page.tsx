@@ -98,7 +98,7 @@ export default function Page() {
     <section className={montserrat.className}>
       <NavBar navBarStyle={navStyle}></NavBar>
       <video autoPlay loop className={Style.banner}>
-        <source src="/video/banner/TODOESPOSIBLE.mp4" />
+        <source src="/video/banner/HOME.mp4" />
       </video>
       <h2 className={Style.title} data-aos="fade-left" >
         Trabajando en conjunto podemos potenciar por medio del contenido, plataformas y herramientas de marketing digital para tu marca, empresa, negocio, comunicación corporativa, educacional y mucho más.
